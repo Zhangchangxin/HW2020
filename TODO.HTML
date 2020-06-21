@@ -1,25 +1,27 @@
 <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todolist</title>
+</head>
 
-<html>
-    <body>
-       <header>
-              <p>TODOLIST</p>
-              <form action="" name="myform">
-                  <input name="content" type="text" value="" placeholder="请输入待办事项" required >
-                  <input type="submit" value="确定" >
-               </form>
+<body>
+    
+   
+    <div id="todolist-panel" class="todo-panel">
+        <div class="editor">
+            <input  id="input-text" type="text"   placeholder="请输入待办事项" required> 
+            <button >添加</button>
+            
+            
+        </div>
+       
+        
+        <div class="items">
 
-        </header>
-       <main>
-          <ul>
-              <li>全部事项 </li>
-              <li>未完成 </li>
-              <li>已完成 </li>
-
-
-            </ul> 
-
-
-        </main>
-     </body>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
 </html>

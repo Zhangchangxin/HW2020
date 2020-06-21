@@ -1,0 +1,81 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.todo-panel{
+    border: 1px solid #eee;
+    width: 40em;
+    min-height: 20em;
+    margin-top: 4em;
+    
+
+    box-shadow: 6px 4px 6px #888;
+}
+.editor {
+    padding: 5px 20px;
+    display: flex;
+}
+
+.editor input {
+    flex-grow: 1;
+    font-size: 1.2em;
+    padding: 2px 5px;
+}
+
+.items {
+    padding: 5px 20px;
+}
+
+.items >.task {
+    display: flex;
+    align-items: center;
+}
+
+.items >.task>input{
+    width:1.5em;
+    height:1.5em;
+}
+
+.items >.task>label{
+    flex-grow: 1;
+}
+
+.items .ctrlbar>button{
+    border:none;
+    background: none;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.items  .ctrlbar>button:hover{
+    font-weight: bolder;
+    
+}
+
+.task.done > label {
+    text-decoration: line-through;
+
+}
+
+.task.done.important > label{
+    color: red;
+    font-weight: bold;
+}
+
+.task.important > label{
+    color: red;
+    font-weight: bold;
+}
+
+
+.items .ctrlbar > button:disabled {
+    color:grey;
+    
+}
+
+.items .ctrlbar > button:disabled:hover{
+    font-weight: unset;
+}
